@@ -1,6 +1,7 @@
 ![Logo](https://cloud-dsjd8yjvj-hack-club-bot.vercel.app/0logo.png)
 # 🙂 PixMoji
 *Here you can create pixel arts but with emojis! You can post your creations on [**#emoji-art**](https://hackclub.slack.com/archives/C087VMU968N)*
+## [GUIDE](https://github.com/rinogodson/pixelmoji/blob/main/USERGUIDE.md)
 
 ## 🚀 Features
 - **Templates**: *There are fun templates selection, where you can choose cool-themed pixel art templates*

@@ -83,7 +83,8 @@ function SelectionPage() {
   return (
     <>
       <div className="bg"></div>
-      <img src="./tag.svg" alt="" className="tag" />
+      <img src="./tag.svg" alt="" className="tag tag1" />
+      <img className="tag tag2" src="./logo.webp" alt="" />
       <div className="container">
         <div className="inputcontainer">
           <img src="/logo.png" className="title"></img>
@@ -98,7 +99,7 @@ function SelectionPage() {
               setMode(mode === "emoji" ? "color" : "emoji");
             }}
           >
-            {mode === "emoji" ? "Color Mode Off" : "Color Mode On"}
+            {mode === "emoji" ? "Color Mode is Off" : "Color Mode is On"}
           </div>
 
           {mode === "emoji" ? (
@@ -458,8 +459,17 @@ function SelectionPage() {
               </a>
             </p>
           </div>
+          <div style={{textAlign:"center", fontSize:"15px", justifySelf:"center", alignSelf:"center", background:"none"}} className="instruction">
+            <p>
+              Finding anything harder?<br/>
+              <a href="https://github.com/rinogodson/pixelmoji/blob/main/USERGUIDE.md">
+                here is the guide
+              </a>
+            </p>
+          </div>
         </div>
       </div>
+      <p style={{position:"absolute", bottom:"10px" ,color:"rgba(255, 255, 255, 0.5)", fontSize:"12px", textAlign:"center", fontFamily:"Mona Sans"}}>Developed by{" "}<a style={{textDecoration:"underline"}} href="https://github.com/rinogodson">Rino Godson</a></p>
     </>
   );
 }

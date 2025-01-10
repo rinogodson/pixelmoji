@@ -42,6 +42,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 7px;
   height: 100vh;
   width: 100vw;
 }
@@ -172,16 +174,58 @@ body {
 .title{
   width: 150px;
   margin-block: 30px;
+  transition: all 0.3s ease;
 }
+.title:hover{
+  transform: scale(1.1);
+}
+
 
 .slider:hover{
   transform: scale(1.2);
 }
 
-.tag{
+.tag1{
   position: absolute;
-  top: 0;
+  top: -8px;
   left: 20px;
+  width: 150px;
+}
+.tag1:hover{
+  animation: rotateAnimation 2s infinite linear;
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform-origin: top left;
+    transform: rotate(0deg);
+  }
+  50%{
+    transform-origin: top left;
+    transform: rotate(15deg)
+  }
+  100% {
+    transform-origin: top left;
+    transform: rotate(0deg);
+  }
+}
+
+.rotatingElement {
+  animation: rotateAnimation 2s infinite linear;
+}
+
+.tag2{
+  position: absolute;
+  top: 20px;
+  opacity: 0.5;
+  right: 20px;
+  transition: all 0.3s ease;
+}
+.tag2:hover{
+  position: absolute;
+  top: 20px;
+  opacity: 1;
+  right: 20px;
   width: 150px;
 }
 
@@ -199,6 +243,18 @@ body {
   color: #f49ff8;
   font-weight: 800;
   text-decoration: underline;
+  transition: all 0.3s ease;
+}
+.instruction a:hover{
+  color: #fddeff;
+  font-weight: 800;
+  text-decoration: underline;
+  text-shadow: 0 0 10px #f49ff8;
+}
+.instruction a:active{
+  font-weight: 800;
+  text-decoration: underline;
+  text-shadow: 0 0 0px #f49ff8;
 }
 
 .toggleColor{
@@ -207,6 +263,13 @@ body {
   font-weight: 600;
   border-radius: 10px;
   border: #ffffff83 3px solid;
+  transition: all 0.3s ease;
+}
+.toggleColor:hover{
+  transform: scale(0.95);
+}
+.toggleColor:active{
+  transform: scale(0.9);
 }
 
 .emoji-back{
@@ -243,3 +306,4 @@ body {
   border:  2px solid #9999996b;
   border-radius: 30px;
 }
+
