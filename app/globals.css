@@ -168,10 +168,12 @@ body {
     transition: background-color 0.3s ease-out;
 }
 }
+
 .title{
-  font-size: 50px;
-  font-family: "Jersey 15";
+  width: 150px;
+  margin-block: 30px;
 }
+
 .slider:hover{
   transform: scale(1.2);
 }

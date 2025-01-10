@@ -86,7 +86,7 @@ function SelectionPage() {
       <img src="./tag.svg" alt="" className="tag" />
       <div className="container">
         <div className="inputcontainer">
-          <h1 className="title">PixMoji</h1>
+          <img src="/logo.png" className="title"></img>
           <div
             style={{
               textAlign: "center",

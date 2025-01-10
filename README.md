@@ -1,5 +1,6 @@
+![Logo](https://cloud-dsjd8yjvj-hack-club-bot.vercel.app/0logo.png)
 # 🙂 PixMoji
-*Here you can create pixel arts but with emojis! You can post your creations on [#emoji-art]()*
+*Here you can create pixel arts but with emojis! You can post your creations on [**#emoji-art**](https://hackclub.slack.com/archives/C087VMU968N)*
 
 ## 🚀 Features
 - **Templates**: *There are fun templates selection, where you can choose cool-themed pixel art templates*
@@ -12,7 +13,7 @@
 ## 🛠️ Installation  
 1. Clone the repo:  
    ```bash
-   git clone https://github.com/username/repository.git
+   git clone https://github.com/rinogodson/pixelmoji.git
    cd repository
    ```
 2. Install dependencies:  
@@ -25,9 +26,15 @@
    ```
 
 ## 📚 Usage  
-1. *Step 1 to use the project.*  
-2. *Step 2 to use the project.*  
-3. *Additional details if necessary.*
+***Step 1** Open the app and select your BG Emoji and Brush Emoji*  
+***Step 2** Set your grid sizes, both horizontal and vertical*  
+**Step 3** Start drawing!
+
+Use Clear button to clear the canvas and Copy button to copy the art.
+
+You can use the color mode to create pixel arts with raw colors. 
+
+**NOTE:** It only works on hackclub slack. Use the Flip Color Button above the canvas to flip the background color
 
 ## 🤝 Contributing  
 Contributions are welcome! Please fork the repository and submit a pull request.  
@@ -49,3 +56,5 @@ Contributions are welcome! Please fork the repository and submit a pull request.
 
 ## 📄 License  
 This project is licensed under the [MIT License](LICENSE).
+
+Used Figma for Designing and Copilot for code suggestion.
