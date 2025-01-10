@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,8 +16,228 @@
   }
 }
 
+*{
+  outline: none;
+  user-select: none;
+}
+
+.container{
+  background-color: #00000048;
+  border: 3px solid #ffffff1b;
+  padding: 20px;
+  width: fit-content;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 20px;
+}
+
 body {
   color: var(--foreground);
-  background: var(--background);
+  background-color: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.bg{
+  position: absolute;
+  background-image: url("/bg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  z-index: -100000;
+  filter: blur(3px);
+}
+.emojiGrid{
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  padding: 10px;
+  width: fit-content;
+  font-family: JetBrains Mono;
+}
+
+.item{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  font-size: 100%;
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  border: 0.5px solid #494949;
+  transition: all 300ms ease;
+}
+
+.itemSpan{
+  transition: all 150ms ease;
+}
+.itemSpan:active{
+  transform: scale(0);
+}
+
+.inputcontainer{
+  background-color: #110c0c70;
+  border: 2px solid #4949498f;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 25px;
+  border-radius: 5px;
+  gap: 30px;
+}
+.inputcontainer input{
+  background-color: #0d0d0d;
+  width: 80px;
+  border-radius: 20px;
+  border: 2px solid #494949;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+.inputcontainer input:hover{
+  transform: scale(0.9);
+}
+.inputcontainer input:active{
+  transform: scale(0.8);
+}
+
+.button{
+  background-color: #ffffff;
+  height: fit-content;
+  color: #0a0a0a;
+  font-family: Mona Sans;
+  font-weight: 600;
+  padding: 10px;
+  padding-inline: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.button:active{
+  transform: scale(0.9);
+}
+
+.select{
+  background-color: #0d0d0d;
+  width: 160px;
+  border-radius: 20px;
+  border: 2px solid #494949;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.slider{
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  background: #0d0d0d;
+  outline: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, #000000 0%, #0275FF 100%);
+  background-size: 200% 100%;
+  background-position: 0% 100%;
+  transition: background-position 0.3s ease-out;
+
+  &::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #494949;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+}
+}
+.title{
+  font-size: 50px;
+  font-family: "Jersey 15";
+}
+.slider:hover{
+  transform: scale(1.2);
+}
+
+.tag{
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 150px;
+}
+
+.instruction{
+  background-color: #30154B;
+  padding: 10px 15px;
+  max-width: 30ch;
+  font-size: 20px;
+  margin: 10px;
+  font-family: Mona Sans;
+  border-radius: 10px;
+}
+
+.instruction a{
+  color: #f49ff8;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+.toggleColor{
+  padding: 2px 10px;
+  font-family: Mona Sans;
+  font-weight: 600;
+  border-radius: 10px;
+  border: #ffffff83 3px solid;
+}
+
+.emoji-back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  gap: 40px;
+  border-radius: 20px;
+}
+
+.closer{
+  width: 100%;
+  height: 100%;
+  background-color: #0000003e;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+}
+
+.emoji-content{
+  z-index: 10000;
+  background-color: #000000b2;
+  padding: 20px;
+  backdrop-filter: blur(5px);
+  border:  2px solid #9999996b;
+  border-radius: 30px;
 }
