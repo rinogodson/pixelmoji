@@ -291,7 +291,8 @@ body {
 .closer{
   width: 100%;
   height: 100%;
-  background-color: #0000003e;
+  background-color: #0000007c;
+  backdrop-filter: blur(10px);
   position: absolute;
   top: 0;
   left: 0;
@@ -307,3 +308,11 @@ body {
   border-radius: 30px;
 }
 
+
+.grid-cont{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

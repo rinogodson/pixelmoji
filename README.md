@@ -5,7 +5,7 @@
 
 ## 🚀 Features
 - **Templates**: *There are fun templates selection, where you can choose cool-themed pixel art templates*
-- **Color Mode** (only works on hackclub slack): *Here you can create pixel arts with raw colors. you can create colors by adjusting the RGB inputs.*
+- **Color Mode** (only works on hackclub slack): *Here you can create pixel arts with raw colors. You can create colors by adjusting the RGB inputs.*
 - **Copy**: *You can copy the art to your clipboard.and share your creativity.*
 - **Brush & BG Input**: *You can get the emoji of your choice to be the background the of the art and the brush.*
 - **Flip Color in Color Mode**: *You can switch between dark and light canvases in the color mode using the flip button above the canvas*
